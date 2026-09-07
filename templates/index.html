@@ -63,7 +63,7 @@
     <div class="pf-project-grid" data-shred="grid">
       {% for post in posts %}
       {% if forloop.Counter0 < 6 %}
-      <a class="pf-scrap" href="{{ post.link }}" data-shred-item style="--i: {{ forloop.Counter0 }}; --card-angle: {% if forloop.Counter0 is divisibleby 2 %}-1deg{% else %}1deg{% endif %};">
+      <a class="pf-scrap" href="{{ post.link }}" data-shred-item style="--i: {{ forloop.Counter0 }};">
         <div class="pf-scrap__media">
           {% if post.feature %}
           <img src="{{ post.feature }}" alt="" loading="lazy" />
