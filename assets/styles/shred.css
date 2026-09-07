@@ -318,21 +318,24 @@ body.shred-theme .nav-item:hover { color: var(--color-accent); }
   border-bottom-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
 }
 
-/* Motion: soft fade only */
-.shred-motion [data-shred-item] {
+/* Motion: soft fade only
+ * 注意：.shred-motion 在 body 上，不能写成 body .shred-motion 后代选择器，
+ * 否则永远匹配不到，列表会卡在 opacity:0。
+ */
+body.shred-motion [data-shred-item] {
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.5s var(--shred-ease), transform 0.5s var(--shred-ease);
   transition-delay: calc(var(--i, 0) * 40ms);
 }
 
-body.is-ready .shred-motion [data-shred-item].is-in {
+body.shred-motion [data-shred-item].is-in {
   opacity: 1;
   transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .shred-motion [data-shred-item] {
+  body.shred-motion [data-shred-item] {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;

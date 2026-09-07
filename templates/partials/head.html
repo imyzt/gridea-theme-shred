@@ -29,6 +29,14 @@
 {% endif %}
 
 <style>
+  /* 防止动效选择器错误导致内容不可见（shred-motion 在 body 上） */
+  body.shred-motion [data-shred-item].is-in {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+</style>
+
+<style>
   .theme-toggle-sun  { display: none; }
   .theme-toggle-moon { display: flex; }
   :root.theme-dark .theme-toggle-sun  { display: flex; }

@@ -14,6 +14,13 @@
   function boot() {
     body.classList.add('is-ready');
     var items = Array.prototype.slice.call(document.querySelectorAll('[data-shred-item]'));
+    if (!items.length) return;
+
+    // 兜底：避免 IO/样式异常时内容一直不可见
+    window.setTimeout(function () {
+      items.forEach(reveal);
+    }, 1200);
+
     if (!('IntersectionObserver' in window)) {
       items.forEach(reveal);
       return;
