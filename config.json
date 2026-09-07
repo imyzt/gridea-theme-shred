@@ -1,0 +1,188 @@
+{
+  "name": "shred",
+  "version": "1.1.0",
+  "author": "imyzt",
+  "description": "Gridea Pro 主题：参考 justin3go 个人页的 editorial 布局与碎纸片卡片，适合文字博客。独立插件，不修改其他主题源码。",
+  "engine": "jinja2",
+  "templateEngine": "jinja2",
+  "repository": "https://github.com/imyzt/gridea-theme-shred",
+  "customConfig": [
+    {
+      "name": "siteLogo",
+      "label": "站点 Logo",
+      "group": "基础设置",
+      "type": "picture-upload",
+      "value": "",
+      "note": "推荐尺寸 40x40，正方形"
+    },
+    {
+      "name": "heroGreeting",
+      "label": "Hero 问候语前缀",
+      "group": "首页设置",
+      "type": "input",
+      "value": "Hi，欢迎来到",
+      "note": "后面会自动跟站点名"
+    },
+    {
+      "name": "heroTagline",
+      "label": "Hero 身份行",
+      "group": "首页设置",
+      "type": "input",
+      "value": "",
+      "note": "如：独立开发者 · 中国。空则用站点描述"
+    },
+    {
+      "name": "heroTitle",
+      "label": "Hero 大标题",
+      "group": "首页设置",
+      "type": "input",
+      "value": "把想法，拼成日常。"
+    },
+    {
+      "name": "heroSubtitle",
+      "label": "Hero 导语",
+      "group": "首页设置",
+      "type": "textarea",
+      "value": "写代码，也收集生活的碎片。把好奇心做成作品，把普通的一天认真收藏。"
+    },
+    {
+      "name": "mottoEn",
+      "label": "Motto（英文）",
+      "group": "首页设置",
+      "type": "input",
+      "value": "CREATE. EXPLORE. REPEAT."
+    },
+    {
+      "name": "mottoZh",
+      "label": "Motto（中文）",
+      "group": "首页设置",
+      "type": "input",
+      "value": "赢在执行力，贵在坚持。"
+    },
+    {
+      "name": "postsSectionTitle",
+      "label": "文章区标题",
+      "group": "首页设置",
+      "type": "input",
+      "value": "做些真正写得出来的东西。"
+    },
+    {
+      "name": "postsSectionDesc",
+      "label": "文章区说明",
+      "group": "首页设置",
+      "type": "textarea",
+      "value": "从一个小念头开始，写成可以打开、可以回看的记录。这里是最近的一些文章。"
+    },
+    {
+      "name": "aboutTitle",
+      "label": "关于区标题",
+      "group": "首页设置",
+      "type": "input",
+      "value": "屏幕之外，也有热爱。"
+    },
+    {
+      "name": "enableShredMotion",
+      "label": "碎纸片入场动效",
+      "group": "首页设置",
+      "type": "toggle",
+      "value": true
+    },
+    {
+      "name": "defaultTheme",
+      "label": "默认主题",
+      "group": "外观设置",
+      "type": "select",
+      "value": "light",
+      "options": [
+        { "label": "浅色", "value": "light" },
+        { "label": "深色", "value": "dark" }
+      ]
+    },
+    {
+      "name": "accentColor",
+      "label": "主题强调色",
+      "group": "外观设置",
+      "type": "input",
+      "value": "#2457c5",
+      "note": "默认参考 justin3go 的蓝调强调，可自行改"
+    },
+    {
+      "name": "heatmapColor",
+      "label": "热力图主色",
+      "group": "外观设置",
+      "type": "input",
+      "value": "#2457c5"
+    },
+    {
+      "name": "showSearch",
+      "label": "显示搜索",
+      "group": "功能开关",
+      "type": "toggle",
+      "value": true
+    },
+    {
+      "name": "showSidebar",
+      "label": "显示侧边栏（内页）",
+      "group": "功能开关",
+      "type": "toggle",
+      "value": false
+    },
+    {
+      "name": "sidebarDescription",
+      "label": "关于区正文 / 侧栏简介",
+      "group": "侧边栏设置",
+      "type": "textarea",
+      "value": ""
+    },
+    {
+      "name": "showHeatmap",
+      "label": "闪念热力图",
+      "group": "功能开关",
+      "type": "toggle",
+      "value": true
+    },
+    {
+      "name": "githubUrl",
+      "label": "GitHub",
+      "group": "社交链接",
+      "type": "input",
+      "value": "https://github.com/imyzt"
+    },
+    {
+      "name": "twitterUrl",
+      "label": "Twitter/X",
+      "group": "社交链接",
+      "type": "input",
+      "value": ""
+    },
+    {
+      "name": "weiboUrl",
+      "label": "微博",
+      "group": "社交链接",
+      "type": "input",
+      "value": ""
+    },
+    {
+      "name": "customCss",
+      "label": "自定义 CSS",
+      "group": "高级设置",
+      "type": "textarea",
+      "value": ""
+    },
+    {
+      "name": "customJs",
+      "label": "自定义 JavaScript",
+      "group": "高级设置",
+      "type": "textarea",
+      "value": ""
+    },
+    {
+      "name": "footerInfo",
+      "label": "页脚信息",
+      "group": "基础设置",
+      "type": "textarea",
+      "value": "",
+      "note": "支持 HTML"
+    }
+  ]
+}
