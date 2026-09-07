@@ -4,15 +4,16 @@
  */
 
 :root {
-  --color-bg: #fbfaf7;
-  --color-bg-soft: #f3f1eb;
-  --color-surface: #ffffff;
-  --color-border: #e6e2d8;
-  --color-border-hover: #cfc8b8;
-  --color-text-primary: #1c1b19;
-  --color-text-secondary: #5c574e;
-  --color-text-muted: #8a8478;
-  --color-text-body: #2e2c28;
+  /* 书本纸色：偏暖、不刺眼，避免纯白 */
+  --color-bg: #e9e2d4;
+  --color-bg-soft: #e0d7c6;
+  --color-surface: #f2ebe0;
+  --color-border: #d2c7b2;
+  --color-border-hover: #b9ab92;
+  --color-text-primary: #2a261f;
+  --color-text-secondary: #5e574c;
+  --color-text-muted: #8a8172;
+  --color-text-body: #3a342c;
   --color-accent: #0f6e56;
   --color-accent-hover: #0a5744;
   --color-badge-gold: #0f6e56;
@@ -44,9 +45,7 @@
 }
 
 body.shred-theme {
-  background:
-    radial-gradient(900px 420px at 0% -5%, color-mix(in srgb, var(--color-accent) 7%, transparent), transparent 55%),
-    var(--color-bg);
+  background: var(--color-bg);
   color: var(--color-text-primary);
   font-family: var(--font-body);
   font-size: var(--font-size-base);
@@ -81,41 +80,7 @@ body.shred-theme .nav-item:hover { color: var(--color-accent); }
 .blog-home {
   width: min(100% - 40px, var(--shell));
   margin: 0 auto;
-  padding: 48px 0 72px;
-}
-
-/* Intro — brand first, one job */
-.blog-intro {
-  position: relative;
-  margin-bottom: 48px;
-  padding-bottom: 28px;
-  border-bottom: 1px solid var(--color-border);
-}
-
-.blog-intro__mark {
-  width: 42px;
-  height: 7px;
-  margin-bottom: 18px;
-  background: var(--color-accent);
-  clip-path: polygon(0 20%, 8% 0, 22% 100%, 40% 10%, 55% 90%, 72% 0, 88% 100%, 100% 30%, 100% 100%, 0 100%);
-  opacity: 0.9;
-}
-
-.blog-intro__name {
-  margin: 0 0 10px;
-  font-family: var(--font-heading);
-  font-size: clamp(1.85rem, 4.5vw, 2.45rem);
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: -0.03em;
-}
-
-.blog-intro__desc {
-  margin: 0;
-  max-width: 36em;
-  font-size: 1rem;
-  line-height: 1.75;
-  color: var(--color-text-secondary);
+  padding: 28px 0 72px;
 }
 
 /* Lead post */

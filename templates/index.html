@@ -4,15 +4,6 @@
 {% block content %}
 
 <div class="blog-home">
-  {# 站点身份：短、克制，不做作品集 Hero #}
-  <header class="blog-intro">
-    <div class="blog-intro__mark" aria-hidden="true"></div>
-    <h1 class="blog-intro__name">{{ config.siteName }}</h1>
-    {% if config.siteDescription %}
-    <p class="blog-intro__desc">{{ config.siteDescription }}</p>
-    {% endif %}
-  </header>
-
   {% if posts|length > 0 %}
   <section class="blog-feed" aria-label="最新文章">
     {# 首篇加重，其余为阅读流 #}
